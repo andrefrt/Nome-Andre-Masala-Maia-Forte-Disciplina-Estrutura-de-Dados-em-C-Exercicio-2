@@ -165,6 +165,12 @@ int main() {
                             printf("Maior elemento da Árvore: %d\n", maior);
                             break;
                         }
+                        case 6:
+                            printf("Digite o número do nó a ser removido: ");
+                            scanf("%d", &item);
+                            arvore = removerNoArvore(arvore, item);
+                            printf("Nó removido com sucesso!\n");
+                            break;
                         case 0:
                             break;
                         default:
